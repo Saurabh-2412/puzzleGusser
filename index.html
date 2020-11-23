@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        :root {
+            --primary-color: #a6a8a8;
+            --off-white: #F3F4F6;
+            --dark-gray: #6B7280;
+        }
+        body{
+            background-color: aquamarine;
+            text-align: center;
+        }
+        hr{
+            color: #00695c;
+        }
+        .link {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .link-primary {
+            background-color: var(--primary-color);
+            border-radius: 0.5rem;
+            color: white
+        }
+
+        .link-secondary {
+            color: var(--primary-color);
+            border-radius: 0.5rem;
+            border: 1px solid var(--primary-color);
+        }
+        .texture{
+            font-style: oblique;
+            font-weight: bold;
+            font-size: larger;
+            font-family: cursive;
+        }
+    </style>
+    <body>
+        <h1>Gueess the puzzle..!</h1>
+        <hr>
+        <p class="texture" id="puzzle"></p>
+        <p class="texture" id="guesses"></p>
+        <button class="link link-primary" id="reset">Reset</button>
+        <script src="request.js"></script>
+        <script src="hangman.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
